@@ -1,0 +1,243 @@
+header h1 {
+    text-align: center;
+    font-family: "Poppins-Regular";
+}
+section main .container {
+    width: 90%;
+    /*background-color: hotpink;*/
+    margin: auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+}
+section main .container .date-input {
+    min-height: 100px;
+    /*background-color: darkorange;*/
+    display: grid;
+    justify-items: center;
+    padding: 10px;
+}
+section main .container .date-input .birth {
+    width: 40%;
+    /*background-color: salmon;*/
+    display: flex;
+}
+section main .container .date-input .birth .title {
+    width: 35%;
+    /*background-color: hotpink;*/
+}
+section main .container .date-input .birth .field {
+    width: 75%;
+    /*background-color: mediumaquamarine;*/
+}
+section main .container .date-input .button {
+    width: 40%;
+    /*background-color: navajowhite;*/
+    text-align: center;
+}
+section main .container .date-input .button button {
+    height: 35px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "Poppins-Light";
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+    font-weight: normal;
+}
+
+
+
+
+section main .container .date-input .date-now {
+    width: 40%;
+    display: flex;
+    /*background-color: midnightblue;*/
+}
+section main .container .date-input .date-now .title {
+    width: 35%;
+    /*background-color: yellow;*/
+}
+section main .container .date-input .date-now .field {
+    width: 75%;
+    /*background-color: greenyellow;*/
+}
+
+
+section main .container .date-input .birth .title p,
+section main .container .date-input .date-now .title p {
+    text-align: right;
+    font-family: "Poppins-Light";
+    font-size: 14px;
+}
+
+section main .container .date-input .birth .field,
+section main .container .date-input .date-now .field {
+    display: grid;
+    align-items: center;
+}
+
+
+section main .container .date-input .birth .field input[type=date],
+section main .container .date-input .date-now .field input[type=date] {
+    margin-left: 10px;
+    width: 90%;
+    font-size: 18px;
+    font-family: "Poppins-ExtraLight";
+}
+
+
+
+
+section main .container .result-input {
+    min-height: 350px;
+    /*background-color: green;*/
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+section main .container .result-input .box-result {
+    width: 60%;
+    /*background-color: navajowhite;*/
+    min-height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
+}
+section main .container .result-input .box-result .year {
+    width: 25%;
+    /*background-color: sandybrown;*/
+}
+section main .container .result-input .box-result h1 {
+    font-family: "Poppins-Regular";
+    font-size: 50px;
+    margin-right: 10px;
+}
+section main .container .result-input .box-result p {
+    text-align: center;
+    font-family: "Poppins-Light";
+    font-size: 25px;
+}
+section main .container .result-input .box-result .months {
+    width: 25%;
+    /*background-color: skyblue;*/
+}
+section main .container .result-input .box-result .day {
+    width: 25%;
+    /*background-color: rosybrown;*/
+}
+
+section main .container .result-input .box-result .year,
+section main .container .result-input .box-result .months,
+section main .container .result-input .box-result .day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+    border-radius: 10px;
+}
+
+
+@font-face {
+    font-family: "Poppins-ExtraLight";
+    src: url("Poppins-ExtraLight.ttf");
+}
+@font-face {
+    font-family: "Poppins-Light";
+    src: url("Poppins-Light.ttf");
+}
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url("Poppins-Regular.ttf");
+}
+
+
+
+
+
+
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    section main .container .date-input .birth {
+        width: 90%;
+    }
+    section main .container .date-input .date-now {
+        width: 90%;
+    }
+    section main .container .date-input .button {
+        width: 90%;
+    }
+    section main .container .result-input .box-result {
+        width: 99%;
+    }
+
+
+    section main .container .result-input .box-result .year {
+        width: 100%;
+        height: 150px;
+    }
+    section main .container .result-input .box-result .months {
+        width: 100%;
+        height: 150px;
+    }
+    section main .container .result-input .box-result .day {
+        width: 100%;
+        height: 150px;
+    }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    section main .container .date-input .birth {
+        width: 90%;
+    }
+    section main .container .date-input .date-now {
+        width: 90%;
+    }
+    section main .container .result-input .box-result {
+        width: 99%;
+    }
+    section main .container .result-input .box-result h1 {
+        font-size: 45px;
+    }
+    section main .container .result-input .box-result p {
+        font-size: 25px;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    section main .container .date-input .birth {
+        width: 70%;
+    }
+    section main .container .date-input .date-now {
+        width: 70%;
+    }
+    section main .container .result-input .box-result {
+        width: 80%;
+    }
+    section main .container .result-input .box-result h1 {
+        font-size: 45px;
+    }
+    section main .container .result-input .box-result p {
+        font-size: 25px;
+    }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    section main .container .date-input .birth {
+        width: 50%;
+    }
+    section main .container .date-input .date-now {
+        width: 50%;
+    }
+    section main .container .result-input .box-result {
+        width: 80%;
+    }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+}
